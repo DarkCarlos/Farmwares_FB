@@ -64,7 +64,7 @@ class MyFarmware():
         self.mov_robot_photo()
         self.take_photo()
         if cv2.contourArea(cnt) > 5:
-            self_mov_right
+            self.mov_right
             valid_contours.append(cnt)
         if cv2.contourArea(cnt) < 4:
             self.mov_robot_origin
