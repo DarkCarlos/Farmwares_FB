@@ -44,13 +44,6 @@ class MyFarmware():
             offset=[0, 0, 0],
             speed=800)
 
-    def mov_left(self): """ si detecta que es mayor a X se va a la izquierda"""
-        log('Execute move: ', message_type='debug', title=str(self.farmwarename))
-        move_absolute(
-            location=[300, 700, 0],
-            offset=[0, 0, 0],
-            speed=800)
-
     def mov_robot_photo(self):
         log('Execute move: ', message_type='debug', title=str(self.farmwarename))
         move_absolute(
@@ -70,9 +63,9 @@ class MyFarmware():
         self.mov_robot_origin()
         self.mov_robot_photo()
         self.take_photo()
-        if cv2.contourArea(cnt) > 1:
+        if cv2.contourArea(cnt) > 5:
             self_mov_right
             valid_contours.append(cnt)
-        else:
-            self_mov_left
+        if cv2.contourArea(cnt)<4
+            self.mov_robot_origin
         sys.exit(0)
