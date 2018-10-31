@@ -66,6 +66,6 @@ class MyFarmware():
         if cv2.contourArea(cnt) > 5:
             self_mov_right
             valid_contours.append(cnt)
-        if cv2.contourArea(cnt)<4
+        if cv2.contourArea(cnt) < 4:
             self.mov_robot_origin
         sys.exit(0)
