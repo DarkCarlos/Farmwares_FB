@@ -37,7 +37,7 @@ class MyFarmware():
             offset=[0, 0, 0],
             speed=800)
 
-    def mov_right(self): """ si detecta que es menor a X se va a la derecha"""
+    def mov_right(self):
         log('Execute move: ', message_type='debug', title=str(self.farmwarename))
         move_absolute(
             location=[300, 400, 0],
