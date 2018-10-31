@@ -6,6 +6,7 @@ from plant_detection.Image import Image
 from plant_detection.Parameters import Parameters
 from plant_detection.DB import DB
 from plant_detection import ENV
+from plant_detection import GUI
 import sys
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 from plant_detection.PlantDetection import PlantDetection
@@ -59,13 +60,12 @@ class MyFarmware():
         self.plant_detection = PlantDetection(coordinates=True, app=True)
         self.plant_detection.detect_plants()
 
+    def mostrar_foto(self):
+        self.run()
+
     def run(self):
         self.mov_robot_origin()
         self.mov_robot_photo()
         self.take_photo()
-        if cv2.contourArea(cnt) > 5:
-            self.mov_right
-            valid_contours.append(cnt)
-        if cv2.contourArea(cnt) < 4:
-            self.mov_robot_origin
+        self.mostrar_foto()
         sys.exit(0)
