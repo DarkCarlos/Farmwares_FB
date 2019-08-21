@@ -2,6 +2,7 @@ import os
 from API import API
 from CeleryPy import log
 from CeleryPy import move_absolute
+from CeleryPy import send_message
 from plant_detection.Image import Image
 from plant_detection.Parameters import Parameters
 from plant_detection.DB import DB
