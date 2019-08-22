@@ -27,12 +27,13 @@ CeleryPy.move_absolute(weeder,(100,0,0),150)
 CeleryPy.move_absolute(weeder,(100,0,100),150)
 CeleryPy.move_absolute(weeder,(100,0,200),150)
 
-CeleryPy.move_absolute((400,400,-200),(0,0,0),150)
-CeleryPy.write_pin(number=4, value=1, mode=0)
-CeleryPy.wait(100)
+CeleryPy.move_absolute((580,400,-340),(0,0,0),150)
 CeleryPy.write_pin(number=4, value=0, mode=0)
-CeleryPy.wait(200)
+CeleryPy.wait(1000)
+
+CeleryPy.move_absolute((580,400,-340),(0,0,0),150)
 CeleryPy.write_pin(number=4, value=1, mode=0)
+CeleryPy.wait(1000)
 
 CeleryPy.move_absolute(weeder,(120,0,200),150)
 CeleryPy.move_absolute(weeder,(120,0,0),150)
@@ -40,4 +41,3 @@ CeleryPy.move_absolute(weeder,(0,0,0),150)
 CeleryPy.move_absolute(weeder,(0,0,200),150)
 send_message(message='PerFect', message_type='success', channel='toast')
 CeleryPy.move_absolute((0,0,0),(0,0,0),250)
-
