@@ -29,11 +29,11 @@ CeleryPy.move_absolute(weeder,(100,0,200),150)
 
 CeleryPy.move_absolute((580,400,-340),(0,0,0),150)
 CeleryPy.write_pin(number=4, value=0, mode=0)
-CeleryPy.wait(1000)
+CeleryPy.wait(2000)
 
-CeleryPy.move_absolute((580,400,-340),(0,0,0),150)
+CeleryPy.move_absolute((450,400,-340),(0,0,0),150)
 CeleryPy.write_pin(number=4, value=1, mode=0)
-CeleryPy.wait(1000)
+CeleryPy.wait(2000)
 
 CeleryPy.move_absolute(weeder,(120,0,200),150)
 CeleryPy.move_absolute(weeder,(120,0,0),150)
